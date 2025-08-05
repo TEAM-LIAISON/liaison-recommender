@@ -1,0 +1,20 @@
+{
+  "created_at": "2025-08-05T23:04:38.775983",
+  "version": "2.0.0",
+  "features": [
+    "tfidf",
+    "svd",
+    "clustering"
+  ],
+  "model_components": [
+    "content_based"
+  ],
+  "performance_metrics": {
+    "mean_similarity": 1.2870034935474288e-16,
+    "std_similarity": 0.0,
+    "max_similarity": 1.2870034935474288e-16,
+    "min_similarity": 1.2870034935474288e-16,
+    "diversity_score": 1.0,
+    "density_score": 0.0
+  }
+}
