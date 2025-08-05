@@ -6,18 +6,16 @@ from enum import Enum
 
 class ContentType(str, Enum):
     """콘텐츠 타입 정의"""
-    SERVICE = "service"
-    PRODUCT = "product"
-    ARTICLE = "article"
-    VIDEO = "video"
+    COACHING = "coaching"
+    DOCUMENT = "document"
 
 
 class ContentStatus(str, Enum):
     """콘텐츠 상태 정의"""
-    ACTIVE = "active"
-    INACTIVE = "inactive"
     DRAFT = "draft"
-    ARCHIVED = "archived"
+    ACTIVE = "active"
+    DELETED = "deleted"
+    DISCONTINUED = "discontinued"
 
 
 class ContentRecommendRequest(BaseModel):
