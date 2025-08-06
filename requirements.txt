@@ -25,6 +25,9 @@ redis==5.0.1
 # pydantic-settings
 pydantic-settings==2.0.0
 
+# 스케줄러
+apscheduler>=3.8.0
+
 # 개발 도구 (선택사항)
 # matplotlib==3.8.4
 # seaborn==0.13.2
