@@ -113,6 +113,28 @@ class CacheManager:
             'keys': list(self._cache.keys())
         }
 
+# 콘텐츠 기반 추천 (구매한 콘텐츠와 유사한 것)
+class ContentBasedRecommender:
+    def calculate_content_based_recommendations(self) -> Dict[int, List[Dict]]:
+        """모든 사용자에 대한 콘텐츠 기반 추천 계산"""
+        recommendations = {}
+
+        # 1. 사용자별 구매 이력 수집
+        user_purchases = self.get_user_purchase_history()
+
+        for user_id, purchased_contents in user_purchases.items():
+            if not purchased_contents:
+                continue
+
+            # 2. 구매한 콘텐츠들의 특성 분석
+            user_preferences = self.analyze_user_preferences(purchased_contents)
+
+            # 3. 유사한 콘텐츠 찾기
+            similar_contents = self.find_similar_contents(user_preferences, exclude_id=[c['content_id'] for c in purchased_contents])
+
+            recommendations[user_id] = similar_contents[:10]    # 상위 10개
+
+        return recommendations
 
 class ContentRecommender:
     def __init__(self, 
