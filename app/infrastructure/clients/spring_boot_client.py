@@ -92,4 +92,3 @@ class SpringBootClient:
         """모든 구매 이력"""
         response = await self._make_request('GET', '/api/v1/purchases')
         return response.get('data', []) if response else []
-    
