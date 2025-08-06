@@ -1,3 +1,8 @@
+
+## 프로젝트 구조
+
+```bash
+
 .
 ├── app/
 │   ├── __init__.py
@@ -83,3 +88,4 @@
 ├── requirements.txt                    # 의존성
 ├── docker-compose.yml                  # Docker 설정
 └── README.md                          # 문서
+```
