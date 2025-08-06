@@ -84,7 +84,7 @@
 │   ├── unit/
 │   └── integration/
 │
-├── .env.example                        # 환경변수 예시
+├── .env                                # 환경변수 예시
 ├── requirements.txt                    # 의존성
 ├── docker-compose.yml                  # Docker 설정
 └── README.md                          # 문서

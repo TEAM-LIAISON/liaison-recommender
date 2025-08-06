@@ -1,15 +1,29 @@
+# 핵심 웹 프레임워크
 fastapi==0.115.6
 uvicorn==0.32.1
+
+# 데이터 처리
 pandas==2.2.3
-scikit-learn==1.5.2
 numpy==1.26.4
-pydantic==2.8.2
-requests==2.32.3
-python-dotenv==1.0.1
-konlpy==0.6.0
-wordcloud==1.9.3
-matplotlib==3.8.4
-seaborn==0.13.2
-joblib==1.4.2
+
+# ML/AI
+scikit-learn==1.5.2
 sentence-transformers==3.3.1
-mysql-connector-python==8.2.0
+joblib==1.4.2
+
+# API 및 통신
+requests==2.32.3
+aiohttp==3.9.1
+
+# 설정 및 유틸리티
+python-dotenv==1.0.1
+pydantic==2.8.2
+
+# 캐시
+redis==5.0.1
+
+# 개발 도구 (선택사항)
+# matplotlib==3.8.4
+# seaborn==0.13.2
+# konlpy==0.6.0
+# wordcloud==1.9.3
