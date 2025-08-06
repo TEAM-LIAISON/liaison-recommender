@@ -1,5 +1,84 @@
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Python
+
+pycache/
+*.py[cod]
+*$py.class
+
+# C extensions
+
+*.so
+
+# Distribution / packaging
+
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Logs
+
+*.log
+logs/
+
+# Database
+
+*.sqlite3
+
+# FastAPI/Uvicorn
+
+*.pid
+
+# Docker
+
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Pytest
+
+.cache/
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# Pydantic JSON caches
+.pydantic_cache/
