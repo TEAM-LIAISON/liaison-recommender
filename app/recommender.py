@@ -135,6 +135,26 @@ class ContentBasedRecommender:
             recommendations[user_id] = similar_contents[:10]    # 상위 10개
 
         return recommendations
+    
+    def find_similar_contents(self, preferences: Dict, exclude_ids: List[int]) -> List[Dict]:
+        """선호도와 유사한 콘텐츠 찾기"""
+        similar_contents = []
+
+        for content in self.get_all_contents():
+            if content['content_id'] in exclude_ids:
+                continue
+            similarity_score = self.calculate_similarity_score(preferences, content)
+
+            if similarity_score > 0.3:  # 임계값
+                similar_contents.append({
+                    'content_id': content['content_id'],
+                    'similarity_score': similarity_score,
+                    'title': content['title'],
+                    'lowest_price': content['lowest_price'],
+                    'content_type': content['content_type']
+                })
+
+        return sorted(similar_contents, key=lambda x: x['similarity_score'], reverse=True)
 
 class ContentRecommender:
     def __init__(self, 
