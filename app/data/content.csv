@@ -1,3 +1,0 @@
-is_representative,lowest_price,sale_count,sort_order,category_id,created_at,id,updated_at,user_id,view_count,title,maker_intro,service_process,service_target,admin_content_checking_status,content_introduction,content_type,reject_reason,status,thumbnail_url
-false,100.00,0,0,2,2025-07-29 00:33:37.547872,1,2025-07-29 00:39:09.101308,1,0,자료 테스트 콘텐츠,메이커 소개 설명,제공 절차 설명,콘텐츠 타겟 설명,PENDING,<p>콘텐츠 본문입니다.</p>,DOCUMENT,,DRAFT,https://image.dev.groble.im/contents/thumbnail/bfffbb6d-7269-4dac-b60a-03c321dd6684_groble_color_logo.png
-false,4000.00,0,0,3,2025-07-28 17:00:47.000000,2,2025-07-28 17:00:47.000000,1,491,더미 콘텐츠 1,메이커 소개입니다.,서비스 절차입니다.,서비스 대상입니다.,VALIDATED,콘텐츠 소개입니다.,DOCUMENT,,DRAFT,https://image.dev.groble.im/test/Spring+Boot.svg
